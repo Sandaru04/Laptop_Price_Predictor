@@ -1,104 +1,104 @@
-*{
+/* Reset Default Styles */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-body{
-    background: black;
-    padding: 0 10px;
+
+/* Background Image */
+body {
+    background: url("Background1.jpg") no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
-.wrapper{
+
+/* Form Container */
+.wrapper {
     max-width: 500px;
     width: 100%;
-    background: #fff;
-    margin: 20px auto;
-    box-shadow: 2px 2px 4px rgba(0,0,0,0.125);
-    padding: 30px;
+    background: rgba(210, 208, 210, 0.9);
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 }
-  
-.wrapper .title{
+
+/* Title */
+.wrapper .title {
     font-size: 24px;
-    font-weight: 700;
-    margin-bottom: 25px;
-    color: black;
-    text-transform: uppercase;
+    font-weight: bold;
     text-align: center;
+    color: #222;
+    margin-bottom: 20px;
+    text-transform: uppercase;
 }
-  
-.wrapper .form{
-    width: 100%;
-}
-  
-.wrapper .form .inputfield{
+
+/* Form Fields */
+.inputfield {
     margin-bottom: 15px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
 }
-  
-.wrapper .form .inputfield label{
-     width: 200px;
-     color: black;
-     margin-right: 10px;
+
+.inputfield label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 5px;
+}
+
+.inputfield .input,
+.inputfield select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     font-size: 14px;
 }
 
-.check{
-    margin-bottom: 15px;
+/* Checkboxes */
+.check {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-bottom: 15px;
 }
 
-.check label{
-    padding: 0px 10px 0px 0px;
+.check label {
+    font-weight: bold;
+    color: #333;
 }
 
-.wrapper .form .inputfield .input{
+/* Submit Button */
+.btn {
     width: 100%;
-    outline: none;
-    border: 1px solid #d5dbd9;
-    font-size: 15px;
-    padding: 8px 10px;
-    border-radius: 3px;
-}
-
-.wrapper .form .inputfield .custom_select{
-    position: relative;
-    width: 100%;
-    height: 37px;
-}
-  
-.wrapper .form .inputfield .custom_select:before{
-    position: absolute;
-    top: 12px;
-    right: 10px;
-}
-  
-.wrapper .form .inputfield .custom_select select{
-    width: 100%;
-    height: 100%;
-    border: 0px;
-    padding: 8px 10px;
-    font-size: 15px;
-    border: 1px solid #d5dbd9;
-    border-radius: 3px;
-}
-
-.wrapper .form .inputfield .btn{
-    width: 100%;
-    padding: 8px 10px;
-    font-size: 15px; 
-    border: 0px;
-    background:  black;
-    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    background: #007BFF;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
     cursor: pointer;
-    border-radius: 3px;
-    outline: none;
+    transition: 0.3s;
 }
-  
-.result p{
+
+.btn:hover {
+    background: #0056b3;
+}
+
+/* Result */
+.result p {
     text-align: center;
-    color: blue;
+    color: #333;
     font-size: 18px;
     font-weight: bold;
+}
+
+.result .price {
+    color: #d9534f;
+    font-size: 20px;
 }
